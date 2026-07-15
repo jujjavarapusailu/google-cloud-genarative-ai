@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie AI Modules</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f7fc;
+            padding:40px 20px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+        }
+
+        h1{
+            text-align:center;
+            color:#0d6efd;
+            margin-bottom:35px;
+            font-size:36px;
+        }
+
+        .card{
+            background:#fff;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.15);
+            padding:25px;
+            margin-bottom:25px;
+            border-left:6px solid #0d6efd;
+        }
+
+        .card h2{
+            color:#0d6efd;
+            margin-bottom:15px;
+            font-size:26px;
+        }
+
+        .card p{
+            font-size:17px;
+            color:#444;
+            line-height:1.8;
+            text-align:justify;
+        }
+
+        .highlight{
+            color:#0d6efd;
+            font-weight:bold;
+        }
+
+        ul{
+            margin-top:15px;
+            padding-left:22px;
+        }
+
+        ul li{
+            margin-bottom:10px;
+            font-size:16px;
+            color:#333;
+            line-height:1.6;
+        }
+
+        @media(max-width:768px){
+            h1{
+                font-size:30px;
+            }
+
+            .card h2{
+                font-size:22px;
+            }
+
+            .card p{
+                font-size:16px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>EduGenie AI Modules</h1>
+
+    <!-- LaMini-Flan-T5 -->
+    <div class="card">
+        <h2>LaMini-Flan-T5 Model</h2>
+
+        <p>
+            <span class="highlight">EduGenie</span> utilizes the
+            <span class="highlight">LaMini-Flan-T5</span> model, a lightweight yet
+            powerful generative AI designed to deliver educational content in a
+            simplified and highly readable manner. The model is fine-tuned to
+            generate concise, context-aware responses that break down complex
+            topics into easily understandable language.
+        </p>
+
+        <p>
+            By emphasizing clarity and brevity, EduGenie enables beginners,
+            school students, and self-learners to understand fundamental
+            concepts without feeling overwhelmed. This makes LaMini-Flan-T5 an
+            ideal study companion for foundational learning across multiple
+            subjects.
+        </p>
+    </div>
+
+    <!-- QnA Module -->
+    <div class="card">
+        <h2>Q&A Module</h2>
+
+        <p>
+            The <span class="highlight">Q&A Module</span> is powered by
+            <span class="highlight">Google Gemini 1.5 Pro</span>, enabling
+            EduGenie to answer both academic and general knowledge questions
+            accurately. Its advanced contextual understanding provides reliable,
+            intelligent, and detailed responses, making it an effective AI tutor
+            across diverse educational topics.
+        </p>
+    </div>
+
+    <!-- Quiz Module -->
+    <div class="card">
+        <h2>Quiz Module</h2>
+
+        <p>
+            EduGenie automatically generates
+            <span class="highlight">three multiple-choice questions (MCQs)</span>
+            from a given passage. Each question contains four carefully designed
+            answer options generated using the
+            <span class="highlight">Gemini 1.5 Pro</span> model.
+        </p>
+
+        <ul>
+            <li>Analyzes the passage to understand its context.</li>
+            <li>Generates meaningful questions with four options.</li>
+            <li>Produces the output in structured JSON format.</li>
+            <li>Removes Markdown code blocks using the <strong>clean_json_block()</strong> function.</li>
+            <li>Parses the cleaned JSON into a Python list.</li>
+            <li>Provides detailed error messages if generation or parsing fails.</li>
+        </ul>
+    </div>
+
+    <!-- Summary Module -->
+    <div class="card">
+        <h2>Summary Module</h2>
+
+        <p>
+            The <span class="highlight">Summary Module</span> uses the
+            <span class="highlight">Gemini</span> model to transform lengthy
+            paragraphs into concise, easy-to-understand summaries. It preserves
+            essential information while eliminating unnecessary details,
+            allowing learners to revise important concepts quickly without
+            losing context or clarity.
+        </p>
+    </div>
+
+    <!-- Learning Path -->
+    <div class="card">
+        <h2>Learning Path Module</h2>
+
+        <p>
+            The
+            <span class="highlight">get_learning_recommendations()</span>
+            function leverages
+            <span class="highlight">Google Gemini</span> to generate
+            personalized learning roadmaps for any topic.
+        </p>
+
+        <ul>
+            <li>Creates beginner-to-advanced learning paths.</li>
+            <li>Organizes topics according to difficulty levels.</li>
+            <li>Suggests useful resources such as videos, articles, and books.</li>
+            <li>Adapts recommendations based on the learner's knowledge level.</li>
+            <li>Safely handles API responses and exceptions.</li>
+            <li>Returns either structured recommendations or meaningful error messages.</li>
+        </ul>
+
+    </div>
+
+</div>
+
+</body>
+</html>
