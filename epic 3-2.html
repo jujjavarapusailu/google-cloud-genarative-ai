@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend and Backend Integration</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f7fc;
+            padding:40px 20px;
+        }
+
+        .container{
+            max-width:1100px;
+            margin:auto;
+        }
+
+        h1{
+            text-align:center;
+            color:#0d6efd;
+            margin-bottom:30px;
+            font-size:36px;
+        }
+
+        .card{
+            background:#fff;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.15);
+            margin-bottom:25px;
+            border-left:6px solid #0d6efd;
+        }
+
+        h2{
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
+
+        p{
+            font-size:17px;
+            color:#444;
+            line-height:1.8;
+            text-align:justify;
+            margin-bottom:15px;
+        }
+
+        .highlight{
+            color:#0d6efd;
+            font-weight:bold;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        table th{
+            background:#0d6efd;
+            color:#fff;
+            padding:12px;
+        }
+
+        table td{
+            border:1px solid #ddd;
+            padding:12px;
+            font-size:16px;
+        }
+
+        table tr:nth-child(even){
+            background:#f8fbff;
+        }
+
+        ul{
+            margin-left:25px;
+            margin-top:15px;
+        }
+
+        li{
+            font-size:17px;
+            margin-bottom:10px;
+            line-height:1.6;
+            color:#333;
+        }
+
+        .flow{
+            margin-top:20px;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:15px;
+        }
+
+        .step{
+            background:#eef5ff;
+            border:2px solid #0d6efd;
+            border-radius:10px;
+            padding:15px 20px;
+            min-width:180px;
+            text-align:center;
+            font-weight:bold;
+            color:#0d6efd;
+        }
+
+        .arrow{
+            font-size:28px;
+            color:#0d6efd;
+            align-self:center;
+        }
+
+        .image-box{
+            margin-top:20px;
+            padding:25px;
+            border:2px dashed #0d6efd;
+            border-radius:8px;
+            background:#eef5ff;
+            text-align:center;
+            color:#555;
+            font-style:italic;
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:30px;
+            }
+
+            .flow{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            .arrow{
+                transform:rotate(90deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Frontend and Backend Integration</h1>
+
+    <div class="card">
+
+        <h2>Overview</h2>
+
+        <p>
+            This activity focused on integrating the
+            <span class="highlight">HTML frontend interface</span> with the
+            <span class="highlight">FastAPI backend</span> to enable real-time
+            communication between users and the AI-powered educational modules
+            of the <span class="highlight">EduGenie Learning Assistant</span>.
+        </p>
+
+        <p>
+            Form submissions from the frontend were connected to backend
+            RESTful API endpoints using
+            <span class="highlight">POST requests</span>. This integration
+            enabled seamless data exchange between the user interface and the
+            AI-powered backend services.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Integration Workflow</h2>
+
+        <div class="flow">
+
+            <div class="step">User Input</div>
+            <div class="arrow">→</div>
+
+            <div class="step">HTML Form</div>
+            <div class="arrow">→</div>
+
+            <div class="step">FastAPI Endpoint</div>
+            <div class="arrow">→</div>
+
+            <div class="step">AI Module</div>
+            <div class="arrow">→</div>
+
+            <div class="step">JSON Response</div>
+            <div class="arrow">→</div>
+
+            <div class="step">Display Result</div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Supported Educational Features</h2>
+
+        <table>
+
+            <tr>
+                <th>Feature</th>
+                <th>Backend Integration</th>
+            </tr>
+
+            <tr>
+                <td>Question Answering (Q&A)</td>
+                <td>Processes user questions and returns AI-generated answers.</td>
+            </tr>
+
+            <tr>
+                <td>Concept Explanation</td>
+                <td>Generates simplified explanations using AI.</td>
+            </tr>
+
+            <tr>
+                <td>Quiz Generation</td>
+                <td>Creates AI-generated multiple-choice quizzes.</td>
+            </tr>
+
+            <tr>
+                <td>Text Summarization</td>
+                <td>Summarizes lengthy educational content.</td>
+            </tr>
+
+            <tr>
+                <td>Learning Recommendations</td>
+                <td>Generates personalized learning paths.</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Key Functionalities</h2>
+
+        <ul>
+            <li>Captures user input through HTML forms.</li>
+            <li>Sends requests to FastAPI endpoints using POST requests.</li>
+            <li>Processes requests through AI-powered educational modules.</li>
+            <li>Returns structured JSON responses from the backend.</li>
+            <li>Displays generated results dynamically without manual page refresh.</li>
+            <li>Provides fast, smooth, and interactive user experience.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Integration Screenshot</h2>
+
+        <div class="image-box">
+            <strong>Insert Frontend-Backend Integration Screenshot Here</strong><br><br>
+
+            (Example: HTML form submitting data to FastAPI and displaying the AI-generated response.)
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Outcome</h2>
+
+        <p>
+            This integration successfully established seamless communication
+            between the <span class="highlight">HTML frontend</span> and the
+            <span class="highlight">FastAPI backend</span>. Users can submit
+            educational queries, receive AI-generated responses in real time,
+            and interact with the EduGenie Learning Assistant through a smooth,
+            responsive, and efficient web interface.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
