@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGenie - Functional Testing</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.card{
+    background:#fff;
+    border-left:6px solid #0d6efd;
+    border-radius:12px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+h2{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:17px;
+    color:#444;
+    line-height:1.8;
+    text-align:justify;
+    margin-bottom:15px;
+}
+
+.highlight{
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table th{
+    background:#0d6efd;
+    color:#fff;
+    padding:12px;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+    font-size:16px;
+}
+
+table tr:nth-child(even){
+    background:#f8fbff;
+}
+
+.image-box{
+    margin-top:20px;
+    padding:25px;
+    border:2px dashed #0d6efd;
+    border-radius:8px;
+    background:#eef5ff;
+    text-align:center;
+    color:#555;
+    font-style:italic;
+}
+
+.feature{
+    background:#eef5ff;
+    border-left:5px solid #0d6efd;
+    padding:18px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+.feature h3{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.feature p{
+    margin-bottom:0;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:30px;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Functional Testing</h1>
+
+<div class="card">
+
+<h2>Overview</h2>
+
+<p>
+The <span class="highlight">Functional Testing</span> phase verified that all
+AI-powered educational features of the <span class="highlight">EduGenie Learning Assistant</span>
+worked correctly after deployment. Each module was tested individually to
+ensure accurate processing of user requests and real-time response generation.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Tested Functionalities</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>Testing Objective</th>
+</tr>
+
+<tr>
+<td>Ask a Question</td>
+<td>Verify accurate AI-generated answers.</td>
+</tr>
+
+<tr>
+<td>Get an Explanation</td>
+<td>Ensure simplified explanations are generated correctly.</td>
+</tr>
+
+<tr>
+<td>Generate a Quiz</td>
+<td>Validate AI-generated MCQs with correct answers.</td>
+</tr>
+
+<tr>
+<td>Summarize Content</td>
+<td>Confirm concise summaries while preserving important information.</td>
+</tr>
+
+<tr>
+<td>Personalized Learning Plan</td>
+<td>Generate structured learning paths with recommended resources.</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Exploring EduGenie</h2>
+
+<div class="feature">
+<h3>Asking Questions</h3>
+<p>
+Users can ask academic or general educational questions and receive accurate,
+AI-generated responses in real time.
+</p>
+</div>
+
+<div class="feature">
+<h3>Explanation of Any Topic</h3>
+<p>
+Complex topics are converted into simple, beginner-friendly explanations,
+making concepts easier to understand.
+</p>
+</div>
+
+<div class="feature">
+<h3>Summarizing Long Paragraphs</h3>
+<p>
+Lengthy educational content is transformed into concise summaries while
+retaining all essential information.
+</p>
+</div>
+
+<div class="feature">
+<h3>Generating Quizzes</h3>
+<p>
+The system automatically generates
+<strong>three multiple-choice questions</strong>, each with
+<strong>four answer options</strong>. If a learner selects an incorrect
+answer, EduGenie immediately identifies and displays the correct answer,
+supporting effective self-assessment.
+</p>
+</div>
+
+<div class="feature">
+<h3>Learning Recommendations</h3>
+<p>
+EduGenie provides a personalized learning path from
+<strong>beginner</strong> to <strong>advanced</strong> level. It also
+recommends useful learning resources such as videos, articles, and books,
+along with step-by-step guidance to help learners master the selected topic.
+</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Functional Testing Screenshots</h2>
+
+<div class="image-box">
+<strong>Screenshot 1</strong><br><br>
+Ask a Question Module
+</div>
+
+<div class="image-box">
+<strong>Screenshot 2</strong><br><br>
+Concept Explanation Module
+</div>
+
+<div class="image-box">
+<strong>Screenshot 3</strong><br><br>
+Text Summarization Module
+</div>
+
+<div class="image-box">
+<strong>Screenshot 4</strong><br><br>
+Quiz Generation Module
+</div>
+
+<div class="image-box">
+<strong>Screenshot 5</strong><br><br>
+Learning Recommendation Module
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Outcome</h2>
+
+<p>
+Functional testing confirmed that all modules of the
+<span class="highlight">EduGenie Learning Assistant</span> operated
+successfully. Users were able to ask questions, obtain explanations,
+summarize educational content, generate quizzes with answer validation,
+and receive personalized learning recommendations. The testing verified
+smooth frontend-backend communication, accurate AI responses, and an
+interactive learning experience.
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
