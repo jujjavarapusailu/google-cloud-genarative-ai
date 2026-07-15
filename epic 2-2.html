@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend API Integration - EduGenie</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f7fc;
+            padding:40px 20px;
+        }
+
+        .container{
+            max-width:1100px;
+            margin:auto;
+        }
+
+        h1{
+            text-align:center;
+            color:#0d6efd;
+            margin-bottom:30px;
+            font-size:36px;
+        }
+
+        .card{
+            background:#fff;
+            padding:30px;
+            margin-bottom:25px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.15);
+            border-left:6px solid #0d6efd;
+        }
+
+        h2{
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
+
+        p{
+            font-size:17px;
+            color:#444;
+            line-height:1.8;
+            text-align:justify;
+            margin-bottom:15px;
+        }
+
+        ul{
+            margin-left:25px;
+            margin-top:10px;
+        }
+
+        li{
+            margin-bottom:10px;
+            font-size:17px;
+            color:#333;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        table th{
+            background:#0d6efd;
+            color:#fff;
+            padding:12px;
+        }
+
+        table td{
+            border:1px solid #ddd;
+            padding:12px;
+            font-size:16px;
+        }
+
+        table tr:nth-child(even){
+            background:#f8fbff;
+        }
+
+        .highlight{
+            color:#0d6efd;
+            font-weight:bold;
+        }
+
+        .image-box{
+            margin-top:20px;
+            padding:18px;
+            border:2px dashed #0d6efd;
+            background:#eef5ff;
+            border-radius:8px;
+            text-align:center;
+            color:#555;
+            font-style:italic;
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:30px;
+            }
+
+            table{
+                font-size:14px;
+            }
+
+            table th,
+            table td{
+                padding:10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Backend API Integration</h1>
+
+    <div class="card">
+
+        <h2>Overview</h2>
+
+        <p>
+            This activity focused on developing the backend infrastructure of the
+            <span class="highlight">EduGenie Learning Assistant</span> using the
+            <span class="highlight">FastAPI</span> framework. RESTful API endpoints
+            were created for every educational feature, allowing the frontend
+            interface to communicate efficiently with the AI-powered backend
+            modules.
+        </p>
+
+        <p>
+            FastAPI was selected because of its high performance, asynchronous
+            request handling, simplicity, automatic API documentation, and
+            seamless integration with AI services. The backend architecture was
+            designed using a modular approach, where each endpoint was linked to
+            its corresponding AI functionality.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Implemented API Modules</h2>
+
+        <p>
+            Separate RESTful API routes were developed for each educational
+            feature. Every endpoint receives user input, validates the request,
+            executes the respective AI module, and returns structured JSON
+            responses to the frontend.
+        </p>
+
+        <table>
+
+            <tr>
+                <th>API Endpoint</th>
+                <th>Function</th>
+            </tr>
+
+            <tr>
+                <td>/qa</td>
+                <td>Handles educational question answering.</td>
+            </tr>
+
+            <tr>
+                <td>/explain</td>
+                <td>Generates simplified explanations for educational topics.</td>
+            </tr>
+
+            <tr>
+                <td>/quiz</td>
+                <td>Creates AI-generated multiple-choice quizzes.</td>
+            </tr>
+
+            <tr>
+                <td>/summarize</td>
+                <td>Summarizes lengthy educational content.</td>
+            </tr>
+
+            <tr>
+                <td>/learn/recommendations</td>
+                <td>Generates personalized learning paths and recommendations.</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h2>API Implementation Screenshots</h2>
+
+        <div class="image-box">
+            <strong>Image 1</strong><br><br>
+            Q&A GET API<br>
+            Explanation POST API<br>
+            Summarization POST API
+            <br><br>
+            <em>Insert Screenshot Here</em>
+        </div>
+
+        <div class="image-box">
+            <strong>Image 2</strong><br><br>
+            Quiz Generation POST API<br>
+            Learning Recommendation GET API
+            <br><br>
+            <em>Insert Screenshot Here</em>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Backend Workflow</h2>
+
+        <ul>
+            <li>Receives user requests through query parameters or JSON payloads.</li>
+            <li>Validates the received input data.</li>
+            <li>Invokes the corresponding AI module for processing.</li>
+            <li>Generates AI-powered educational responses.</li>
+            <li>Returns structured JSON responses to the frontend.</li>
+            <li>Implements error handling for missing or invalid input values.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Outcome</h2>
+
+        <p>
+            The backend API integration established smooth communication between
+            the frontend interface and AI-powered educational modules. This
+            architecture enables real-time educational assistance, efficient
+            response generation, and seamless interaction between users and the
+            EduGenie Learning Assistant, providing a scalable foundation for
+            future enhancements.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
